@@ -1,0 +1,584 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+
+body {
+  background-image: url("https://res.cloudinary.com/ladylaurelin/image/upload/v1558452205/66030_mh6lvs.jpg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-origin: content-box, padding-box;
+  box-sizing: border-box;
+  margin: 0;
+}
+
+header {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto;
+  background-image: url("https://res.cloudinary.com/ladylaurelin/image/upload/v1558441441/ubw3_c10ks2.png");
+  background-attachment: local;
+  background-repeat: no-repeat;
+  background-origin: content-box, padding-box;
+  background-size: cover;
+  background-position: 0% 85%;
+  box-sizing: border-box;
+  padding: 1px 1px 1px 0px;
+  height: 19.8em;
+}
+
+/* trying to use css grid for the first time here, proved to be fast and efficient.  */
+
+#main {
+  overflow: hidden;
+}
+
+/* including this one to tidy up the whole page */
+
+header .griditem3 {
+  grid-row: 1 / 3;
+  grid-column: 3 / 4;
+  overflow: visible;
+  display: -webkit-flex; /* Safari */
+  -webkit-justify-content: center; /* Safari 6.1+ */
+  display: flex;
+  justify-content: center;
+}
+
+header .griditem11 {
+  grid-column: 2 / 5;
+  display: -webkit-flex; /* Safari */
+  -webkit-justify-content: center; /* Safari 6.1+ */
+  display: flex;
+  justify-content: center;
+}
+
+article {
+  margin: 0em 0em 0em 0px;
+  width: 75%;
+  float: right;
+}
+
+aside {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: auto auto auto auto;
+  margin: 0px 0em 0em 0em;
+  width: 25%;
+  overflow: hidden;
+  z-index: -3;
+  box-sizing: border-box;
+  background-color: rgb(36, 35, 35);
+  margin-bottom: -10000px;
+  padding-bottom: 5000px;
+}
+/* the full length sidebar is proving to be a pain the #@$, leaving the ridiculuous values as is until I learn a much more efficient method */
+
+aside .griditem1 {
+  overflow: visible;
+  display: -webkit-flex; /* Safari */
+  -webkit-justify-content: center; /* Safari 6.1+ */
+  display: flex;
+  justify-content: center;
+  margin: 0em 0em 0em 0em;
+}
+
+p {
+  color: #ffffff;
+  font-family: "Source Sans Pro", sans-serif;
+  margin: 1em;
+  font-size: 17px;
+  word-spacing: normal;
+}
+
+ul {
+  overflow: visible;
+  font-family: "Source Sans Pro", sans-serif;
+  color: beige;
+  margin: 0.8em 1em 0.8em 1em;
+}
+
+ul.navibarul {
+  list-style-type: none;
+  margin: 0em -0em 0em 0em;
+  padding: 0;
+  overflow: hidden;
+  background-color: rgb(149, 23, 25);
+  position: -webkit-sticky; /* for Safari */
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 5;
+  font-family: "Libre Baskerville", serif;
+  font-size: 1.15em;
+  color: white;
+}
+
+h1 {
+  color: white;
+  font-size: 5em;
+  margin: -15px 1px 0em 1px;
+  font-family: "Libre Baskerville", serif;
+  text-shadow: 5px 5px 9px rgb(149, 23, 25);
+}
+
+h2 {
+  color: #f5f5f5;
+  font-size: 36px;
+  font-family: "Libre Baskerville", serif;
+  text-shadow: 1.5px 1.5px 2px rgb(149, 23, 25);
+  margin: 0.7em 1em 0.7em 1em;
+}
+
+h3 span {
+  bottom: 0;
+  right: 0;
+  font-style: italic;
+  font-family: Georgia, Serif;
+  font-size: 18px;
+  color: rgb(197, 196, 196);
+  font-weight: normal;
+  text-shadow: 1px 1px 3px rgb(189, 189, 189);
+  margin: 0em 0em 0em 4em;
+}
+
+h3 {
+  color: #f5f5f5;
+  font-size: 26px;
+  font-family: "Libre Baskerville", serif;
+  text-shadow: 1px 1px 3px rgb(230, 101, 101);
+  margin: 1.5em 0.5em 0.5em 0.5em;
+}
+
+h4 {
+  color: #f5f5f5;
+  font-size: 20px;
+  font-family: "Libre Baskerville", serif;
+  text-shadow: none;
+  margin: 0.5em 0.5em 0.5em 2.5em;
+}
+
+span {
+  font-style: italic;
+}
+
+a:link {
+  color: white;
+}
+a:visited {
+  color: purple;
+}
+
+li.topbar {
+  float: left;
+  border-right: 1px solid #bbb;
+  z-index: 5;
+}
+
+li.topbar a {
+  display: block;
+  color: rgb(255, 255, 255);
+  text-align: right;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li.topbar a:hover {
+  background-color: rgb(255, 255, 255);
+  outline: 1px solid beige;
+  outline-offset: -1px;
+  color: rgb(149, 23, 25);
+  font-weight: bold;
+}
+
+li.topbar:nth-child(n + 4) {
+  float: right;
+}
+
+li.topbar:last-child {
+  border-left: 1px solid #bbb;
+  text-align: inherit;
+}
+
+dt {
+  color: #f5f5f5;
+  font-size: 26px;
+  font-family: "Libre Baskerville", serif;
+  text-shadow: 1px 1px 3px rgb(230, 101, 101);
+  margin: 1.5em 0.5em 0.5em 0.5em;
+}
+
+dt span {
+  bottom: 0;
+  right: 0;
+  font-style: italic;
+  font-family: Georgia, Serif;
+  font-size: 18px;
+  color: rgb(197, 196, 196);
+  font-weight: normal;
+  text-shadow: 1px 1px 3px rgb(189, 189, 189);
+  margin: 0em 0em 0em 4em;
+}
+
+dl {
+  color: #ffffff;
+  margin: 10px 2px 10px 22px;
+}
+
+dd {
+  color: #f5f5f5;
+  font-size: 20px;
+  font-family: "Libre Baskerville", serif;
+  text-shadow: none;
+  margin: 0.5em 0.5em 0.5em 2.5em;
+}
+
+dd:last-child {
+  margin-bottom: 2em;
+}
+
+aside dt {
+  color: #f5f5f5;
+  font-size: 1.8em;
+  font-family: "Libre Baskerville", serif;
+  text-shadow: 1.5px 1.5px 2px rgb(149, 23, 25);
+  margin: 0.5em 0.5em 0.5em 2em;
+  text-decoration: underline;
+}
+
+aside dl {
+  color: #ffffff;
+  margin: 10px 2px 10px 22px;
+}
+
+aside dd {
+  color: #f5f5f5;
+  font-size: 16px;
+  font-family: "Source Sans Pro", sans-serif;
+  text-shadow: none;
+  margin: 0.5em 1em 0.5em 1em;
+}
+
+.maincontent {
+  border: 3px groove #333333;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin: 0.5em 0.3em 0.5em 0.3em;
+  padding: 0.1em 1em;
+  box-shadow: 0 0 0.5em rgba(0, 0, 0, 0.0625);
+  background-color: rgba(0, 0, 0, 0.603);
+}
+
+.maincontent p {
+  color: #f5f5f5;
+  font-size: 22px;
+  font-family: "Source Sans Pro", sans-serif;
+  text-shadow: none;
+  margin: 0.5em 1em 2em 1em;
+}
+
+.maincontent li {
+  color: #f5f5f5;
+  font-size: 18px;
+  font-family: "Source Sans Pro", sans-serif;
+  text-shadow: none;
+  margin: 0.5em 1em 0.5em 1em;
+}
+
+.maincontent li:last-child {
+  margin-bottom: 2em;
+}
+
+#arya {
+  border: 3px double #6b6666cb;
+  margin: 10px 0px -50px 0px;
+  width: 12em;
+  height: 12em;
+  transition: transform 0.2s;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.74);
+  box-shadow: 0px 0px 15px rgb(149, 23, 25);
+}
+#arya:hover {
+  transform: scale(1.02);
+}
+
+#phoenix {
+  width: 12em;
+  height: 12em;
+  margin: 3px 0px 0px 0px;
+  transition: transform 0.2s;
+}
+
+aside .griditem1:hover {
+  transform: scale(1.02);
+}
+
+aside p {
+  color: white;
+  font-size: 5em;
+  font-family: "Libre Baskerville", serif;
+  margin: 1em -2.05em 0em 0em;
+  z-index: 2;
+  text-shadow: 2px 2px 6px rgb(255, 0, 0);
+}
+
+.material-icons.md-36 {
+  font-size: 36px;
+  vertical-align: bottom;
+}
+
+.material-icons.md-24 {
+  font-size: 24px;
+  display: none;
+}
+
+@media (max-width: 950px) {
+  aside dt {
+    color: #f5f5f5;
+    font-size: 1.5em;
+    font-family: "Libre Baskerville", serif;
+    text-shadow: 1.5px 1.5px 2px rgb(149, 23, 25);
+    margin: 0px 1px 13px 1px;
+  }
+
+  aside dl {
+    color: #ffffff;
+    margin: 10px 2px 10px 2px;
+    font-size: 0.6em;
+  }
+
+  #phoenix {
+    width: 7em;
+    height: 7em;
+    margin: 0px 0px 0px 0px;
+    transition: transform 0.2s;
+  }
+
+  aside p {
+    font-size: 2.8em;
+    margin: 1em -2.05em 0em 0.5em;
+    z-index: 2;
+    text-shadow: 2px 2px 6px rgb(255, 0, 0);
+  }
+
+  ul.navibarul {
+    font-size: 1em;
+  }
+}
+
+@media (max-width: 600px) {
+  header {
+    height: 15em;
+  }
+
+  dt {
+    font-size: 18px;
+    margin: 0.8em 0em 0.5em 0em;
+  }
+
+  dd {
+    font-size: 15px;
+    margin: 0.2em 0em 0.2em 0.1em;
+  }
+
+  dl {
+    color: #ffffff;
+    margin: 5px 2px 5px 22px;
+  }
+
+  dt span {
+    font-size: 12px;
+    margin-left: 1em;
+  }
+
+  aside dt {
+    color: #f5f5f5;
+    font-size: 1.5em;
+    text-shadow: 1.5px 1.5px 2px rgb(149, 23, 25);
+    margin: 0px 1px 13px 1px;
+  }
+
+  aside dd {
+    color: #ffffff;
+    margin: 4px 2px 4px 2px;
+    font-size: 1.2em;
+  }
+
+  h1 {
+    font-size: 65px;
+  }
+
+  h2 {
+    font-size: 26px;
+    margin: 0.4em 0.3em 0.4em 0.3em;
+  }
+
+  h3 {
+    font-size: 18px;
+    margin: 0.4em 0.3em 0.4em 0.3em;
+  }
+
+  h3 span {
+    font-size: 12px;
+    margin-left: 1em;
+  }
+
+  h4 {
+    font-size: 16px;
+    margin: 0.4em 0.3em 0.4em 0.3em;
+  }
+
+  .maincontent {
+    margin: 0.1em 0.05em 0.1em 0.05em;
+    padding: 0.1em 0.5em;
+  }
+
+  #arya {
+    border: 3px double #6b6666cb;
+    margin: 10px 0px 0px 0px;
+    width: 9em;
+    height: 9em;
+  }
+
+  #phoenix {
+    width: 7em;
+    height: 7em;
+    margin: 0px 0px 0px 0px;
+    transition: transform 0.2s;
+  }
+
+  aside p {
+    font-size: 2.8em;
+    margin: 1em -2.05em 0em 0.5em;
+    z-index: 2;
+    text-shadow: 2px 2px 6px rgb(255, 0, 0);
+  }
+
+  ul.navibarul {
+    font-size: 0.74em;
+  }
+
+  .maincontent p {
+    font-size: 15px;
+    margin: 0.2em 0.1em 0.2em 0.1em;
+  }
+
+  .maincontent li {
+    font-size: 15px;
+    margin: 0.2em 0em 0.2em 0.1em;
+  }
+
+  .maincontent li:last-child {
+    margin-bottom: 0.5em;
+  }
+
+  .material-icons.md-36 {
+    display: none;
+  }
+
+  .material-icons.md-24 {
+    display: inline;
+    font-size: 24px;
+  }
+}
