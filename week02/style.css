@@ -1,0 +1,251 @@
+*,
+*:before,
+*:after {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    box-sizing: inherit;
+}
+
+
+/* My main goal for this homework is to minimize the amount of code and keeping it simple and clean.
+In my last 2 projects I noticed that I kept going and going adding tons of extra things for eye candy and I was repeating myself over and over again.
+
+edit: I also started with a desktop first with this one but I will try to do mobile first from now on :3 */
+
+body {
+    background-image: url("images/Clouds.jpg");
+    background-attachment: fixed;
+    background-repeat: repeat;
+    background-origin: content-box, padding-box;
+}
+
+p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    margin: 0em 0.5em 0.1em 0.5em;
+}
+
+h1 {
+    display: inline-flex;
+    font-size: 13em;
+    font-weight: bold;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    background-image: url("images/Drone.jpg");
+    background-attachment: local;
+    background-repeat: no-repeat;
+    background-origin: content-box, padding-box;
+    background-size: cover;
+    background-position: 0% 55%;
+    box-sizing: border-box;
+    border-bottom: outset rgba(255, 255, 255, 0.671);
+    color: rgb(218, 144, 32);
+    text-shadow: 5px 5px 9px rgb(17, 129, 129, 0.671);
+}
+
+h2 {
+    display: inline-flex;
+    float: left;
+    font-size: 4em;
+    font-weight: bold;
+    justify-content: center;
+    width: 95.7%;
+    background: radial-gradient(80% 60%, white, rgba(17, 129, 129, 0.671));
+    border-radius: 40px;
+    color: rgb(218, 144, 32);
+    animation-name: burningturning;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+h3 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.7em;
+    margin: 0em 2.5em 0em 2.5em;
+    font-weight: bold;
+}
+
+
+/* Attempting "Bonus objective: Keyframes Animation"...
+Just wanted to do a simple animation like this to emulate a pseudo cloud effect :p
+The effect is a bit stuttery now, could have included more *frames* in here to smooth it out but not doing it because 
+of time restraints :p  */
+
+@keyframes burningturning {
+    0%,
+    100% {
+        background: radial-gradient(80% 60%, white, rgba(17, 129, 129, 0.671));
+    }
+    75% {
+        background: radial-gradient(70% 70%, white, rgba(17, 129, 129, 0.671));
+    }
+    50% {
+        background: radial-gradient(60% 80%, white, rgba(17, 129, 129, 0.671));
+    }
+    25% {
+        background: radial-gradient(70% 70%, white, rgba(17, 129, 129, 0.671));
+    }
+}
+
+section {
+    box-sizing: border-box;
+    padding: 2em 0em 2em 4em;
+}
+
+#grid-floats .grid-item {
+    float: left;
+    width: 23%;
+    height: 25em;
+    display: block;
+    margin: 1em 1em 1em 0em;
+    border: 4px ridge #ffffffd3;
+    border-radius: 4px;
+    box-shadow: 0 0 0.5em rgba(0, 0, 0, 0.555);
+    background-color: rgb(255, 255, 255);
+    transition: transform 0.2s;
+}
+
+#grid-floats .grid-item:hover {
+    transform: scale(1.02);
+    box-shadow: 0 0 1em rgba(184, 112, 5, 0.904);
+}
+
+#grid-floats::before,
+#grid-floats::after {
+    display: table;
+    content: " ";
+    clear: both;
+}
+
+#grid-floats .grid-item:first-child {
+    width: 47%;
+    margin-left: 1px;
+}
+
+#grid-floats .grid-item:first-child img {
+    max-height: 70%;
+    margin: 0em auto 0em auto;
+}
+
+
+/* Tried something crazy here with the nthchild selector, leaving it below as is to remind me of the lunacy :p */
+
+
+/* #grid-floats .grid-item:nth-of-type(n+2):nth-of-type(even):nth-of-type(-n+14) {
+    background-color: #298EB2;
+    box-shadow: inset -3px -3px 10px rgba(0, 0, 0, 0.4), 0 0 10px black;
+    float: left;
+    margin: 0.5em;
+    position: relative;
+}
+
+#grid-floats .grid-item:nth-of-type(n+2):nth-of-type(odd):nth-of-type(-n+14) {
+    background-color: rgb(165, 68, 173);
+    box-shadow: inset -3px -3px 10px rgba(0, 0, 0, 0.4), 0 0 10px black;
+    float: right;
+    margin: 0.5em;
+    position: relative;
+} */
+
+#grid-flex {
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+#grid-flex .grid-item {
+    width: 23%;
+    display: block;
+    height: 25em;
+    border: 4px ridge #ffffffd3;
+    border-radius: 4px;
+    box-shadow: 0 0 0.5em rgba(0, 0, 0, 0.555);
+    background-color: rgb(255, 255, 255);
+    transition: transform 0.2s;
+    margin: 0.5em;
+}
+
+#grid-flex .grid-item:first-child {
+    width: 47%;
+    margin: 0.5em 0.5em 0.5em 0.5em;
+}
+
+#grid-flex .grid-item:first-child img {
+    max-height: 70%;
+    margin: 0em auto 0em auto;
+}
+
+#grid-flex .grid-item:hover {
+    transform: scale(1.02);
+    box-shadow: 0 0 1em rgba(184, 112, 5, 0.904);
+}
+
+img {
+    max-width: 70%;
+    height: auto;
+    display: block;
+    margin: 0em auto 0em auto;
+}
+
+@media all and (max-width: 1000px) and (min-width: 800px) {
+    * {
+        font-size: 90%
+    }
+    p {
+        font-size: 1.8em;
+    }
+    h3 {
+        font-size: 2.1em;
+    }
+    #grid-floats .grid-item {
+        width: 31%;
+        height: 38em;
+    }
+    #grid-floats .grid-item:nth-child(-n+2) {
+        width: 47%;
+        margin-left: 1px;
+    }
+    #grid-flex .grid-item {
+        width: 31%;
+        height: 38em;
+    }
+    #grid-flex .grid-item:nth-child(-n+2) {
+        width: 47%;
+    }
+}
+
+@media all and (max-width: 799px) and (min-width: 420px) {
+    * {
+        font-size: 80%
+    }
+    p {
+        font-size: 2.5em;
+    }
+    h3 {
+        font-size: 3em;
+    }
+    #grid-floats .grid-item {
+        width: 47%;
+        height: 47em;
+    }
+    #grid-floats .grid-item:first-child {
+        width: 95%;
+        margin-left: 1px;
+    }
+    #grid-flex .grid-item {
+        width: 47%;
+        height: 47em;
+    }
+    #grid-flex .grid-item:first-child {
+        width: 95%;
+    }
+}
+
+
+/* Yes!, finished under 250 lines as if that was a goal or something :p  */
