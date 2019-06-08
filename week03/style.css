@@ -1,0 +1,522 @@
+*,
+*:before,
+*:after {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 16px;
+    font: inherit;
+    vertical-align: baseline;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "ROSans";
+    src: url("font/rijksoverheidsanstext-regular.ttf") format('truetype');
+}
+
+@font-face {
+    font-family: "ROSans";
+    src: url("font/rijksoverheidsansheading-bold.ttf") format('truetype');
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: "ROSans";
+    src: url("font/rijksoverheidserif-italic.ttf") format('truetype');
+    font-style: italic;
+}
+
+body {
+    font-family: "ROSans", Calibri, sans-serif;
+    font-weight: normal;
+    font-size: 1.125rem;
+    font-size: 100%;
+    -webkit-text-size-adjust: 100%;
+    background-color: white;
+}
+
+header img {
+    margin: 0% 0% -0.2em 47.79%;
+}
+
+.topnav {
+    overflow: hidden;
+    background-color: #01689b;
+    text-align: right;
+    min-height: 5.2rem;
+    padding: 1.1em;
+}
+
+.topnav a:first-child {
+    float: left;
+    font-size: 1.625rem;
+    margin: 0.3em 0 0 10%;
+    letter-spacing: 0.48px;
+}
+
+.topnav a:nth-child(7) {
+    margin-right: 11%;
+}
+
+.topnav a {
+    display: inline-block;
+    color: #f2f2f2;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1.1rem;
+    margin: 0.8em 0em 0.5em 1.5em;
+}
+
+.topnav a:hover {
+    text-decoration: underline;
+}
+
+.topnav .icon {
+    display: none;
+}
+
+.hero {
+    background-image: url("img/met-pensioen-gaan-hero.jpg");
+    height: 23.2rem;
+    background-attachment: local;
+    background-repeat: no-repeat;
+    background-origin: content-box, padding-box;
+    background-size: cover;
+    background-position: 0% 50%;
+    box-sizing: border-box;
+}
+
+.middle {
+    background-color: white;
+    box-sizing: border-box;
+    display: block;
+    float: left;
+    height: 79%;
+    width: 25.5%;
+    margin: 1.7% 0 0 10%;
+    padding: 1.5rem;
+}
+
+.middle h2 {
+    line-height: 1.55rem;
+    font-size: 1.525rem;
+    justify-content: center;
+    margin: 0.1rem 0 .655em 0.20rem;
+}
+
+.middle ul li {
+    font-weight: bolder;
+    font-size: 1.5rem;
+    color: #01689b;
+    display: block;
+    position: relative;
+    line-height: 1.85rem;
+    word-wrap: break-word;
+    /* margin-left: 1em; */
+}
+
+.middle ul li a {
+    text-decoration: none;
+    color: inherit;
+    padding-left: 0.7em;
+    font-size: 1.125rem;
+}
+
+.fa .fas {
+    font-weight: 900;
+}
+
+.copyright {
+    position: absolute;
+    color: #fff;
+    z-index: 10;
+    padding: 5px 0 0 10px;
+    line-height: 1.375em;
+    text-shadow: 1px 1px 4px #000;
+    font-size: .7em;
+}
+
+.hero .copyright {
+    margin-top: 21rem;
+}
+
+article {
+    background-color: #f3f3f3;
+}
+
+article .grid-wrapper {
+    display: grid;
+    grid-template-columns: 24% 24% 24% 24%;
+    grid-template-rows: 31% 31% 31%;
+    grid-column-gap: 1.2rem;
+    grid-row-gap: 1.2rem;
+    margin: 0 12% 0 12%;
+    padding-top: 3.75rem;
+    padding-bottom: 3.75rem;
+}
+
+.grid-wrapper .content {
+    min-height: 9rem;
+    width: auto;
+}
+
+.grid-wrapper .content h3 a {
+    color: #01689b;
+    text-decoration: none;
+    text-transform: none;
+    font-size: 1.48rem;
+    line-height: 1.2rem;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.grid-wrapper .content h3 a:hover {
+    text-decoration: underline;
+}
+
+.grid-wrapper .content p {
+    line-height: 1.375em;
+    margin-bottom: 0;
+    font-size: 1.01rem
+}
+
+section.niuews {
+    padding: 4% 11% 4% 11%;
+}
+
+.brick img {
+    width: 100%;
+    margin: 5px 0 15px 0;
+}
+
+.brick h3 {
+    font-size: 1.57rem;
+    line-height: 2rem;
+    font-weight: normal;
+    margin: 0 0 10px 0;
+    word-break: break-word;
+}
+
+.brick h3 a {
+    text-decoration: none;
+    color: #01689b;
+}
+
+.brick h3 a:hover {
+    text-decoration: underline;
+}
+
+.brick p {
+    color: #000;
+    font-size: 0.92rem;
+    line-height: 1.375rem;
+    word-break: break-word;
+}
+
+.brick p .publDate {
+    font-weight: bold;
+}
+
+.niuews2 h2 {
+    padding: 0.6em 0 0.4em 0;
+    font-size: 1.525rem;
+    font-weight: bold;
+}
+
+.niuews2 a.more {
+    clear: both;
+    float: left;
+    text-decoration: none;
+    position: relative;
+    display: block;
+    /* padding-left: 1em; */
+    font-weight: bold;
+    color: #01689b;
+    font-size: 1.125rem;
+    line-height: 1.625rem;
+    text-decoration: none;
+    width: auto;
+}
+
+.niuews2 a.more:hover {
+    text-decoration: underline;
+}
+
+.brick .copyright {
+    margin-top: -3.5em;
+    position: absolute;
+    color: #fff;
+    z-index: 10;
+    padding: 5px 0 0 10px;
+    line-height: 1.375em;
+    text-shadow: 1px 1px 4px #000;
+    font-size: .7em;
+}
+
+section .wrapper {
+    display: grid;
+    grid-template-columns: 31.6% 31.6% 31.6%;
+    grid-column-gap: 1.9rem;
+    border-top: 1px solid #d4cdcd;
+    padding: 1.20% 0% 0% 0%;
+}
+
+section.niuews2 {
+    padding: 4% 11% 4% 11%;
+}
+
+.niuews2 h2 {
+    border-top: 1px solid #d4cdcd;
+}
+
+section .wrapper2 {
+    display: grid;
+    grid-template-columns: 31.6% 31.6% 31.6%;
+    grid-template-rows: 42% 42%;
+    grid-column-gap: 1.9rem;
+    grid-row-gap: 1.9rem;
+    padding: 1.20% 0% 0% 0%;
+}
+
+aside .wrapper {
+    display: flex;
+    padding: 4% 11% 4% 11%;
+    margin-top: -5rem;
+}
+
+aside .brick_banner {
+    width: 31.6%;
+    margin-right: 1.9rem;
+}
+
+
+/* took these stylings out of the original site, still trying to grasp why they did the styling with svg since I cant find a clear answer :/ */
+
+.stijl01 {
+    fill: #FFFFFF;
+    stroke: #CBD2E3;
+    stroke-width: 4;
+    stroke-miterlimit: 10;
+}
+
+.stijl02 {
+    fill: #111111;
+    font-size: 1.6rem;
+    font-family: "RO Sans", Calibri, Verdana, sans-serif;
+}
+
+.stijl03 {
+    fill: #a90061;
+    font-weight: bold;
+    font-size: 31px;
+    font-family: "RO Sans", Calibri, Verdana, sans-serif;
+}
+
+.stijl04 {
+    fill: #01689b;
+    font-weight: bold;
+    font-size: 31px;
+    font-family: "RO Sans", Calibri, Verdana, sans-serif;
+    margin-top: 1rem;
+}
+
+footer {
+    background-color: #01689b;
+    border: 0;
+    padding-bottom: 0;
+    height: 20em;
+}
+
+footer::before,
+footer::after {
+    content: ' ';
+    display: table;
+}
+
+footer .wrapper {
+    display: flex;
+    justify-content: flex-end;
+}
+
+footer .payoff span {
+    display: block;
+    padding-bottom: 25px;
+    color: #fff;
+    font-size: 1.65em;
+    font-family: "RO Serif";
+    font-style: italic;
+    font-weight: normal;
+    line-height: 1.2381;
+}
+
+footer .wrapper .column ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+footer .wrapper .column ul li a:hover {
+    text-decoration: underline;
+}
+
+.languages {
+    background-color: white;
+}
+
+.languages .wrapper {
+    padding: 30px 15px;
+    margin: 0 auto;
+}
+
+.languages .wrapper ul {
+    text-align: center;
+}
+
+.languages .wrapper ul li {
+    display: block;
+    float: left;
+    width: auto;
+}
+
+.languages .wrapper ul li.selected {
+    margin: 0.6rem 0.7rem 1rem 19rem;
+    padding: 0.3rem 0.6rem 0.3rem 0.6rem;
+    border: 0;
+    color: #000;
+    font-weight: 700;
+}
+
+.languages .wrapper ul li a {
+    padding: 0.6rem 0.9rem 0.6rem 0.9rem;
+    background: 0;
+    border: 1px solid #b2d7ee;
+    color: #007bc7;
+    margin: 0.3em 0.3em 0.3em 0;
+    font-size: 0.95em;
+    text-decoration: none;
+    float: left;
+}
+
+@media screen and (max-width: 765px) {
+    .topnav a:not(:first-child) {
+        display: none;
+    }
+    .topnav a.icon {
+        float: right;
+        display: block;
+    }
+}
+
+@media screen and (max-width: 765px) {
+    .topnav.responsive {
+        position: relative;
+    }
+    .topnav.responsive .icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    .topnav.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    body {
+        font-size: 111%;
+        -webkit-text-size-adjust: 111%;
+    }
+}
+
+@media all and (max-width: 766px) and (min-width: 359px) {
+    body {
+        font-size: 50%;
+        -webkit-text-size-adjust: 50%
+    }
+    .middle {
+        height: 85%;
+        width: 85%;
+        margin: 1.7% 0 0 10%;
+        padding: 1.5rem;
+    }
+    .middle h2 {
+        line-height: 1.55rem;
+        font-size: 1.525rem;
+        justify-content: center;
+        margin: 0.1rem 0 .655em 0.20rem;
+    }
+    .middle ul li {
+        font-weight: bolder;
+        font-size: 1.5rem;
+        color: #01689b;
+        display: block;
+        position: relative;
+        line-height: 1.85rem;
+        word-wrap: break-word;
+    }
+    article .grid-wrapper {
+        grid-template-columns: 100%;
+        grid-template-rows: auto;
+        grid-column-gap: 0;
+        margin: 0 4% 0 4%;
+        grid-row-gap: 1.2rem;
+        padding-top: 1.75rem;
+        padding-bottom: 1.75rem;
+    }
+    .grid-wrapper .content {
+        min-height: 5rem;
+        /* width: 90%; */
+    }
+    section .wrapper2 {
+        grid-template-columns: 100%;
+        grid-column-gap: 0;
+        grid-template-rows: auto;
+        grid-row-gap: 1.5rem;
+        margin-bottom: 5.5rem;
+    }
+    section .wrapper {
+        grid-template-columns: 100%;
+        grid-template-rows: auto;
+        grid-row-gap: 1.5rem;
+        grid-column-gap: 1.9rem;
+    }
+    .brick img {
+        width: 100%;
+        margin: 5px 0 15px 0;
+    }
+    .languages .wrapper ul li.selected {
+        margin: 0.5rem 0.5rem 1rem 0.5rem;
+    }
+    aside .wrapper {
+        flex-direction: column;
+        padding: 4em;
+    }
+    aside .brick_banner {
+        width: 97%;
+        margin: 0em 0em 8em 0em;
+    }
+    article .grid-wrapper .content:first-child {
+        max-height: 1rem;
+    }
+    section.niuews {
+        padding: 4% 4% 4% 4%;
+    }
+    section.niuews2 {
+        padding: 4% 4% 4% 4%;
+    }
+}
+
+@media (max-width: 620px) {
+    header img {
+        max-width: 50%;
+    }
+}
+
+@media all and (max-width: 992px) and (min-width: 767px) {
+    body {
+        font-size: 70%;
+        -webkit-text-size-adjust: 70%
+    }
+}
