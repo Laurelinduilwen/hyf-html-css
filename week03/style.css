@@ -335,11 +335,12 @@ footer::after {
 }
 
 footer .wrapper {
-    display: flex;
-    justify-content: flex-end;
+    display: grid;
+    grid-template-columns: 60% 25% 25%;
+    padding: 4% 12% 4% 12%;
 }
 
-footer .payoff span {
+footer .column span {
     display: block;
     padding-bottom: 25px;
     color: #fff;
@@ -350,9 +351,24 @@ footer .payoff span {
     line-height: 1.2381;
 }
 
-footer .wrapper .column ul li a {
+footer .wrapper .column ul li {
+    list-style: none;
+    line-height: 1.425;
+}
+
+footer .wrapper .column h2 {
     color: #fff;
+    margin: 0.5em 0 0.4em 0;
+    padding-top: 0;
+    color: #fff;
+    font-weight: normal;
+    font-size: 1.5em;
+    border: 0;
+}
+
+footer .wrapper .column ul li a {
     text-decoration: none;
+    color: #fff;
 }
 
 footer .wrapper .column ul li a:hover {
@@ -415,6 +431,7 @@ footer .wrapper .column ul li a:hover {
         position: absolute;
         right: 0;
         top: 0;
+        margin: 1.3em 0.5em 0.5em 0.5em;
     }
     .topnav.responsive a {
         float: none;
@@ -436,20 +453,20 @@ footer .wrapper .column ul li a:hover {
         -webkit-text-size-adjust: 50%
     }
     .middle {
-        height: 85%;
-        width: 85%;
-        margin: 1.7% 0 0 10%;
-        padding: 1.5rem;
+        height: 90%;
+        width: 88%;
+        margin: 4% 6% 4% 6%;
+        padding: 1rem;
     }
     .middle h2 {
-        line-height: 1.55rem;
-        font-size: 1.525rem;
+        line-height: 1.35rem;
+        font-size: 1.325rem;
         justify-content: center;
         margin: 0.1rem 0 .655em 0.20rem;
     }
     .middle ul li {
         font-weight: bolder;
-        font-size: 1.5rem;
+        font-size: 1.4rem;
         color: #01689b;
         display: block;
         position: relative;
@@ -506,6 +523,15 @@ footer .wrapper .column ul li a:hover {
     section.niuews2 {
         padding: 4% 4% 4% 4%;
     }
+    .topnav {
+        min-height: 3.2rem;
+    }
+    .hero .copyright {
+        margin-top: 22.2rem;
+    }
+    .brick .copyright {
+        margin-top: -5.5em;
+    }
 }
 
 @media (max-width: 620px) {
@@ -516,7 +542,93 @@ footer .wrapper .column ul li a:hover {
 
 @media all and (max-width: 992px) and (min-width: 767px) {
     body {
-        font-size: 70%;
-        -webkit-text-size-adjust: 70%
+        font-size: 80%;
+        -webkit-text-size-adjust: 80%
+    }
+    .topnav a {
+        margin-left: 2.5%;
+    }
+    .topnav a:first-child {
+        margin-left: 1%;
+    }
+    .topnav a:nth-child(7) {
+        margin-right: 1%;
+    }
+    .hero {
+        height: 33.2rem;
+        background-position: 50% 50%;
+    }
+    .middle {
+        height: 90%;
+        width: 30%;
+        margin: 2% 4% 2% 4%;
+        padding: 1rem;
+    }
+    .middle h2 {
+        line-height: 1.35rem;
+        font-size: 1.325rem;
+        justify-content: center;
+        margin: 0.1rem 0 .655em 0.20rem;
+    }
+    .middle ul li {
+        font-weight: bolder;
+        font-size: 1.4rem;
+        color: #01689b;
+        display: block;
+        position: relative;
+        line-height: 1.85rem;
+        word-wrap: break-word;
+    }
+    article .grid-wrapper {
+        grid-template-columns: 50% 50%;
+        grid-template-rows: auto;
+        grid-column-gap: 2em;
+        margin: 0 4% 0 4%;
+        grid-row-gap: 1.2rem;
+        grid-column-gap: 1.2rem;
+        padding-top: 1.75rem;
+        padding-bottom: 1.75rem;
+    }
+    section .wrapper2 {
+        grid-template-columns: 50% 50%;
+        grid-column-gap: 1.2rem;
+        grid-template-rows: auto;
+        grid-row-gap: 1.5rem;
+        margin-bottom: 5.5rem;
+    }
+    section .wrapper {
+        grid-template-columns: 50% 50%;
+        grid-template-rows: auto;
+        grid-row-gap: 1.5rem;
+        grid-column-gap: 1.9rem;
+    }
+    .brick img {
+        width: 92%;
+        margin: 5px 0 15px 0;
+    }
+    .languages .wrapper ul li.selected {
+        margin: 0.5rem 0.5rem 1rem 0.5rem;
+    }
+    aside .wrapper {
+        padding: 4em;
+    }
+    aside .brick_banner {
+        width: 55%;
+        margin: 0em 2em 2em 0em;
+    }
+    section.niuews {
+        padding: 4% 4% 4% 4%;
+    }
+    section.niuews2 {
+        padding: 4% 4% 4% 4%;
+    }
+    .topnav {
+        min-height: 3.2rem;
+    }
+    .hero .copyright {
+        margin-top: 31.2rem;
+    }
+    .brick .copyright {
+        margin-top: -3.9em;
     }
 }
